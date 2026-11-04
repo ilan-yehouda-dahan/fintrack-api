@@ -3,7 +3,7 @@ function isValidName(name) {
 }
 
 function isValidAmount(amount) {
-  return typeof amount === "number" && amount > 0; // BUG : 0 n'est plus accepté
+  return typeof amount === "number" && amount >= 0;
 }
 
 module.exports = { isValidName, isValidAmount };
